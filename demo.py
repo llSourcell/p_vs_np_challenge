@@ -23,6 +23,9 @@ def find_paths(node, cities, path, distance):
         if (city not in path) and (node in cities[city]):
             find_paths(city, dict(cities), list(path), distance)
 
+#CHALLENGE -- write your own strategy to estimate the shortest route
+#def find_paths_estimate(node, cities, path, distance):
+
 
 if __name__ == '__main__':
     cities = {
